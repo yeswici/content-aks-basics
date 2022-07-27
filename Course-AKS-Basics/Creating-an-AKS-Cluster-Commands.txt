@@ -1,7 +1,11 @@
+Get and set RG
+az group list
+RG=...
+
 Create an AKS Cluster
 
 az aks create \
---resource-group <Resource Group Name> \
+--resource-group $RG \
 --name Cluster01 \
 --node-count 3 \
 --generate-ssh-keys \
